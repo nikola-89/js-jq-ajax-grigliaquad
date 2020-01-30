@@ -74,10 +74,3 @@ body {
         local("Segoe UI"),
         url('http://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2') format("woff2");
 }
-
-@media only screen and (max-width: 1200px) {
-    .main-wrapper {
-        width: 100vw;
-        height: 100vh;
-    }
-}
