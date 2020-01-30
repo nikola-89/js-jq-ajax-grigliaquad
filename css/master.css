@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Fallback, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(180deg ,#dddbd1 ,#d2dbdc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main-wrapper */
+.main-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    background-color: #FFF;
+    box-shadow: 0 1px 1px 0 rgba(0 ,0 ,0 , .06), 0 2px 5px 0 rgba(0 ,0 ,0, .2);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: #333
+}
+
+.cell__hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+.cell__red,
+.cell__green,
+.cell__yellow {
+    font-size: 35px;
+}
+
+.cell__green {
+    border: 1px solid #0d831c;
+    background-color: #0d831c;
+}
+
+.cell__yellow {
+    border: 1px solid #cdcc34;
+    background-color: #cdcc34;
+}
+
+.cell__red {
+    border: 1px solid rgb(172, 75, 75);
+    background-color: rgb(172, 75, 75);
+}
+/* *************************************************************** */
+@font-face {
+    font-family: Segoe UI;
+    src:
+        local("Segoe UI"),
+        url('http://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2') format("woff2");
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+}
