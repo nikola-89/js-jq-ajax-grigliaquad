@@ -12,14 +12,12 @@
     <body>
         <div class="main-wrapper">
         </div>
-        <div class="template">
-            <script id="builder" type="text/x-handlebars-template">
-                <div class="{{class}}">
-                    {{#if number includeZero=false}}
-                    <h4>{{number}}</h4>
-                    {{/if}}
-                </div>
-            </script>
-        </div>
+        <script id="builder" type="text/x-handlebars-template">
+            <div class="{{class}}">
+                {{#if number includeZero=false}}
+                <h4>{{number}}</h4>
+                {{/if}}
+            </div>
+        </script>
     </body>
 </html>
