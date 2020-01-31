@@ -39,7 +39,8 @@ body {
     margin: 5px;
     cursor: pointer;
     transition-duration: 0.4s;
-    color: #333
+    color: #333;
+    user-select: none;
 }
 
 .cell__hover {
@@ -51,20 +52,18 @@ body {
 .cell__green,
 .cell__yellow {
     font-size: 35px;
+    border: none;
 }
 
 .cell__green {
-    border: 1px solid #0d831c;
-    background-color: #0d831c;
+    background-color: rgb(0, 153, 0);
 }
 
 .cell__yellow {
-    border: 1px solid #cdcc34;
-    background-color: #cdcc34;
+    background-color: rgb(255, 209, 26);
 }
 
 .cell__red {
-    border: 1px solid rgb(172, 75, 75);
     background-color: rgb(172, 75, 75);
 }
 

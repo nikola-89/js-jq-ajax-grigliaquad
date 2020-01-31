@@ -5,7 +5,6 @@
         <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
         <link rel="stylesheet" href="css/master.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.min.js" integrity="sha256-MlbTFXdOM7EZphnz0OyXQqPt2zBOjfRXCq14CfgSsS0=" crossorigin="anonymous"></script>
         <script src="js/script.js" charset="utf-8"></script>
         <title>AJAX</title>
@@ -14,13 +13,11 @@
         <div class="main-wrapper">
         </div>
         <div class="template">
-            <script id="cell" type="text/x-handlebars-template">
+            <script id="builder" type="text/x-handlebars-template">
                 <div class="{{class}}">
+                    {{#if number includeZero=false}}
                     <h4>{{number}}</h4>
-                </div>
-            </script>
-            <script id="row" type="text/x-handlebars-template">
-                <div class="{{class}}">
+                    {{/if}}
                 </div>
             </script>
         </div>
