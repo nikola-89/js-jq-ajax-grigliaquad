@@ -48,10 +48,10 @@ body {
     color: #FFF;
 }
 
-.cell__red,
 .cell__green,
 .cell__yellow {
-    font-size: 35px;
+    font-size: 60px;
+    font-weight: bolder;
     border: none;
 }
 
@@ -64,7 +64,9 @@ body {
 }
 
 .cell__red {
-    background-color: rgb(172, 75, 75);
+    background-color: rgb(255, 0, 0);
+    border: none;
+    font-size: 35px;
 }
 
 .template {

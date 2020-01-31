@@ -25,11 +25,11 @@ function request(element) {
                 if (!isNaN(r.response)) {
                     print(r.response, element);
                 } else {
-                    error(element);
+                    error(element, s);
                 }
             },
-            error: function (r, s, e) {
-                error(element);
+            error: function (r, s) {
+                error(element, s);
             }
         }
     );
@@ -48,9 +48,9 @@ function print(number, element) {
     element.remove();
 }
 
-function error(element) {
+function error(element, status) {
     var message = {
-        "number": 'Ops!',
+        "number": status,
         "class": 'cell cell__red'
     }
     $(builder(message)).insertAfter(element);
