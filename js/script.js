@@ -40,20 +40,20 @@ function print(number, element) {
     if (number <= 5) {
         color = "cell cell__yellow";
     }
-    var message = {
+    var cell_config = {
         "number": number,
         "class": color
     }
-    $(builder(message)).insertAfter(element);
+    $(builder(cell_config)).insertAfter(element);
     element.remove();
 }
 
 function error(element, status) {
-    var message = {
+    var cell_config = {
         "number": status,
         "class": 'cell cell__red'
     }
-    $(builder(message)).insertAfter(element);
+    $(builder(cell_config)).insertAfter(element);
     element.remove();
 }
 
